@@ -18,3 +18,6 @@ FOUNDATION_EXPORT const unsigned char FZ_RefreshVersionString[];
 
 #import "RefreshFooterView.h"
 #import "RefreshHeaderView.h"
+#import "UIScrollView+Refresh.h"
+#import "UIScrollView+Custom.h"
+
