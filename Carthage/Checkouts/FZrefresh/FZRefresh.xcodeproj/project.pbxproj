@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E26C6A212BEA1A004A708E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C69212BEA1A004A708E /* AppDelegate.m */; };
+		03E26C6D212BEA1A004A708E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C6C212BEA1A004A708E /* ViewController.m */; };
+		03E26C70212BEA1A004A708E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E26C6E212BEA1A004A708E /* Main.storyboard */; };
+		03E26C72212BEA1B004A708E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E26C71212BEA1B004A708E /* Assets.xcassets */; };
+		03E26C75212BEA1B004A708E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E26C73212BEA1B004A708E /* LaunchScreen.storyboard */; };
+		03E26C78212BEA1B004A708E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C77212BEA1B004A708E /* main.m */; };
+		03E26C82212BEA1B004A708E /* FZRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C81212BEA1B004A708E /* FZRefreshTests.m */; };
+		03E26C8D212BEA1B004A708E /* FZRefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C8C212BEA1B004A708E /* FZRefreshUITests.m */; };
+		03E26CA8212BEA44004A708E /* FZ_Refresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E26C9F212BEA44004A708E /* FZ_Refresh.framework */; };
+		03E26CAF212BEA44004A708E /* FZ_RefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CAE212BEA44004A708E /* FZ_RefreshTests.m */; };
+		03E26CB1212BEA44004A708E /* FZ_Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CA1212BEA44004A708E /* FZ_Refresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03E26CB4212BEA44004A708E /* FZ_Refresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E26C9F212BEA44004A708E /* FZ_Refresh.framework */; };
+		03E26CB5212BEA44004A708E /* FZ_Refresh.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03E26C9F212BEA44004A708E /* FZ_Refresh.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03E26CCE212BEA8F004A708E /* RefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CBD212BEA8E004A708E /* RefreshHeaderView.m */; };
+		03E26CCF212BEA8F004A708E /* RefreshHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CBE212BEA8E004A708E /* RefreshHeaderView.h */; };
+		03E26CD0212BEA8F004A708E /* BaseAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CBF212BEA8E004A708E /* BaseAnimationView.m */; };
+		03E26CD1212BEA8F004A708E /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC0212BEA8E004A708E /* UIScrollView+Refresh.h */; };
+		03E26CD2212BEA8F004A708E /* UIScrollView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC1212BEA8E004A708E /* UIScrollView+Custom.m */; };
+		03E26CD3212BEA8F004A708E /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC2212BEA8E004A708E /* AnimationView.m */; };
+		03E26CD5212BEA8F004A708E /* BaseAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC4212BEA8E004A708E /* BaseAnimationView.h */; };
+		03E26CD6212BEA8F004A708E /* NormalAniationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC5212BEA8E004A708E /* NormalAniationView.h */; };
+		03E26CD7212BEA8F004A708E /* RefreshFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC6212BEA8E004A708E /* RefreshFooterView.h */; };
+		03E26CD8212BEA8F004A708E /* NormalAniationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC7212BEA8F004A708E /* NormalAniationView.m */; };
+		03E26CD9212BEA8F004A708E /* AnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC8212BEA8F004A708E /* AnimationView.h */; };
+		03E26CDA212BEA8F004A708E /* UIScrollView+Custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC9212BEA8F004A708E /* UIScrollView+Custom.h */; };
+		03E26CDB212BEA8F004A708E /* RefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CCA212BEA8F004A708E /* RefreshFooterView.m */; };
+		03E26CDC212BEA8F004A708E /* RefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CCB212BEA8F004A708E /* RefreshComponent.h */; };
+		03E26CDD212BEA8F004A708E /* RefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CCC212BEA8F004A708E /* RefreshComponent.m */; };
+		03E26CDE212BEA8F004A708E /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CCD212BEA8F004A708E /* UIScrollView+Refresh.m */; };
+		03E26CE2212BEAF1004A708E /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CDF212BEAF0004A708E /* RefreshViewController.m */; };
+		03E26CE3212BEAF1004A708E /* RefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E26CE1212BEAF0004A708E /* RefreshViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03E26C7E212BEA1B004A708E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E26C5D212BEA1A004A708E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E26C64212BEA1A004A708E;
+			remoteInfo = FZRefresh;
+		};
+		03E26C89212BEA1B004A708E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E26C5D212BEA1A004A708E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E26C64212BEA1A004A708E;
+			remoteInfo = FZRefresh;
+		};
+		03E26CA9212BEA44004A708E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E26C5D212BEA1A004A708E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E26C9E212BEA44004A708E;
+			remoteInfo = "FZ-Refresh";
+		};
+		03E26CAB212BEA44004A708E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E26C5D212BEA1A004A708E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E26C64212BEA1A004A708E;
+			remoteInfo = FZRefresh;
+		};
+		03E26CB2212BEA44004A708E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E26C5D212BEA1A004A708E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E26C9E212BEA44004A708E;
+			remoteInfo = "FZ-Refresh";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03E26CB9212BEA44004A708E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03E26CB5212BEA44004A708E /* FZ_Refresh.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03E26C65212BEA1A004A708E /* FZRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E26C68212BEA1A004A708E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03E26C69212BEA1A004A708E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03E26C6B212BEA1A004A708E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03E26C6C212BEA1A004A708E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03E26C6F212BEA1A004A708E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03E26C71212BEA1B004A708E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03E26C74212BEA1B004A708E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03E26C76212BEA1B004A708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E26C77212BEA1B004A708E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03E26C7D212BEA1B004A708E /* FZRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E26C81212BEA1B004A708E /* FZRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZRefreshTests.m; sourceTree = "<group>"; };
+		03E26C83212BEA1B004A708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E26C88212BEA1B004A708E /* FZRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E26C8C212BEA1B004A708E /* FZRefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZRefreshUITests.m; sourceTree = "<group>"; };
+		03E26C8E212BEA1B004A708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E26C9F212BEA44004A708E /* FZ_Refresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FZ_Refresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E26CA1212BEA44004A708E /* FZ_Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZ_Refresh.h; sourceTree = "<group>"; };
+		03E26CA2212BEA44004A708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E26CA7212BEA44004A708E /* FZ-RefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FZ-RefreshTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E26CAE212BEA44004A708E /* FZ_RefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZ_RefreshTests.m; sourceTree = "<group>"; };
+		03E26CB0212BEA44004A708E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E26CBD212BEA8E004A708E /* RefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshHeaderView.m; sourceTree = "<group>"; };
+		03E26CBE212BEA8E004A708E /* RefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshHeaderView.h; sourceTree = "<group>"; };
+		03E26CBF212BEA8E004A708E /* BaseAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationView.m; sourceTree = "<group>"; };
+		03E26CC0212BEA8E004A708E /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		03E26CC1212BEA8E004A708E /* UIScrollView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Custom.m"; sourceTree = "<group>"; };
+		03E26CC2212BEA8E004A708E /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		03E26CC4212BEA8E004A708E /* BaseAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimationView.h; sourceTree = "<group>"; };
+		03E26CC5212BEA8E004A708E /* NormalAniationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalAniationView.h; sourceTree = "<group>"; };
+		03E26CC6212BEA8E004A708E /* RefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshFooterView.h; sourceTree = "<group>"; };
+		03E26CC7212BEA8F004A708E /* NormalAniationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalAniationView.m; sourceTree = "<group>"; };
+		03E26CC8212BEA8F004A708E /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		03E26CC9212BEA8F004A708E /* UIScrollView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Custom.h"; sourceTree = "<group>"; };
+		03E26CCA212BEA8F004A708E /* RefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshFooterView.m; sourceTree = "<group>"; };
+		03E26CCB212BEA8F004A708E /* RefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshComponent.h; sourceTree = "<group>"; };
+		03E26CCC212BEA8F004A708E /* RefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshComponent.m; sourceTree = "<group>"; };
+		03E26CCD212BEA8F004A708E /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		03E26CDF212BEAF0004A708E /* RefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		03E26CE0212BEAF0004A708E /* RefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		03E26CE1212BEAF0004A708E /* RefreshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E26C62212BEA1A004A708E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CB4212BEA44004A708E /* FZ_Refresh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C7A212BEA1B004A708E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C85212BEA1B004A708E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C9B212BEA44004A708E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26CA4212BEA44004A708E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CA8212BEA44004A708E /* FZ_Refresh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E26C5C212BEA1A004A708E = {
+			isa = PBXGroup;
+			children = (
+				03E26C67212BEA1A004A708E /* FZRefresh */,
+				03E26C80212BEA1B004A708E /* FZRefreshTests */,
+				03E26C8B212BEA1B004A708E /* FZRefreshUITests */,
+				03E26CA0212BEA44004A708E /* FZ-Refresh */,
+				03E26CAD212BEA44004A708E /* FZ-RefreshTests */,
+				03E26C66212BEA1A004A708E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03E26C66212BEA1A004A708E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E26C65212BEA1A004A708E /* FZRefresh.app */,
+				03E26C7D212BEA1B004A708E /* FZRefreshTests.xctest */,
+				03E26C88212BEA1B004A708E /* FZRefreshUITests.xctest */,
+				03E26C9F212BEA44004A708E /* FZ_Refresh.framework */,
+				03E26CA7212BEA44004A708E /* FZ-RefreshTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E26C67212BEA1A004A708E /* FZRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				03E26C68212BEA1A004A708E /* AppDelegate.h */,
+				03E26C69212BEA1A004A708E /* AppDelegate.m */,
+				03E26C6B212BEA1A004A708E /* ViewController.h */,
+				03E26C6C212BEA1A004A708E /* ViewController.m */,
+				03E26CE0212BEAF0004A708E /* RefreshViewController.h */,
+				03E26CDF212BEAF0004A708E /* RefreshViewController.m */,
+				03E26CE1212BEAF0004A708E /* RefreshViewController.xib */,
+				03E26C6E212BEA1A004A708E /* Main.storyboard */,
+				03E26C71212BEA1B004A708E /* Assets.xcassets */,
+				03E26C73212BEA1B004A708E /* LaunchScreen.storyboard */,
+				03E26C76212BEA1B004A708E /* Info.plist */,
+				03E26C77212BEA1B004A708E /* main.m */,
+			);
+			path = FZRefresh;
+			sourceTree = "<group>";
+		};
+		03E26C80212BEA1B004A708E /* FZRefreshTests */ = {
+			isa = PBXGroup;
+			children = (
+				03E26C81212BEA1B004A708E /* FZRefreshTests.m */,
+				03E26C83212BEA1B004A708E /* Info.plist */,
+			);
+			path = FZRefreshTests;
+			sourceTree = "<group>";
+		};
+		03E26C8B212BEA1B004A708E /* FZRefreshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03E26C8C212BEA1B004A708E /* FZRefreshUITests.m */,
+				03E26C8E212BEA1B004A708E /* Info.plist */,
+			);
+			path = FZRefreshUITests;
+			sourceTree = "<group>";
+		};
+		03E26CA0212BEA44004A708E /* FZ-Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				03E26CC8212BEA8F004A708E /* AnimationView.h */,
+				03E26CC2212BEA8E004A708E /* AnimationView.m */,
+				03E26CC4212BEA8E004A708E /* BaseAnimationView.h */,
+				03E26CBF212BEA8E004A708E /* BaseAnimationView.m */,
+				03E26CC5212BEA8E004A708E /* NormalAniationView.h */,
+				03E26CC7212BEA8F004A708E /* NormalAniationView.m */,
+				03E26CCB212BEA8F004A708E /* RefreshComponent.h */,
+				03E26CCC212BEA8F004A708E /* RefreshComponent.m */,
+				03E26CC6212BEA8E004A708E /* RefreshFooterView.h */,
+				03E26CCA212BEA8F004A708E /* RefreshFooterView.m */,
+				03E26CBE212BEA8E004A708E /* RefreshHeaderView.h */,
+				03E26CBD212BEA8E004A708E /* RefreshHeaderView.m */,
+				03E26CC9212BEA8F004A708E /* UIScrollView+Custom.h */,
+				03E26CC1212BEA8E004A708E /* UIScrollView+Custom.m */,
+				03E26CC0212BEA8E004A708E /* UIScrollView+Refresh.h */,
+				03E26CCD212BEA8F004A708E /* UIScrollView+Refresh.m */,
+				03E26CA1212BEA44004A708E /* FZ_Refresh.h */,
+				03E26CA2212BEA44004A708E /* Info.plist */,
+			);
+			path = "FZ-Refresh";
+			sourceTree = "<group>";
+		};
+		03E26CAD212BEA44004A708E /* FZ-RefreshTests */ = {
+			isa = PBXGroup;
+			children = (
+				03E26CAE212BEA44004A708E /* FZ_RefreshTests.m */,
+				03E26CB0212BEA44004A708E /* Info.plist */,
+			);
+			path = "FZ-RefreshTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03E26C9C212BEA44004A708E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CDC212BEA8F004A708E /* RefreshComponent.h in Headers */,
+				03E26CD9212BEA8F004A708E /* AnimationView.h in Headers */,
+				03E26CD1212BEA8F004A708E /* UIScrollView+Refresh.h in Headers */,
+				03E26CD7212BEA8F004A708E /* RefreshFooterView.h in Headers */,
+				03E26CD6212BEA8F004A708E /* NormalAniationView.h in Headers */,
+				03E26CCF212BEA8F004A708E /* RefreshHeaderView.h in Headers */,
+				03E26CB1212BEA44004A708E /* FZ_Refresh.h in Headers */,
+				03E26CDA212BEA8F004A708E /* UIScrollView+Custom.h in Headers */,
+				03E26CD5212BEA8F004A708E /* BaseAnimationView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03E26C64212BEA1A004A708E /* FZRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E26C91212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefresh" */;
+			buildPhases = (
+				03E26C61212BEA1A004A708E /* Sources */,
+				03E26C62212BEA1A004A708E /* Frameworks */,
+				03E26C63212BEA1A004A708E /* Resources */,
+				03E26CB9212BEA44004A708E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E26CB3212BEA44004A708E /* PBXTargetDependency */,
+			);
+			name = FZRefresh;
+			productName = FZRefresh;
+			productReference = 03E26C65212BEA1A004A708E /* FZRefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03E26C7C212BEA1B004A708E /* FZRefreshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E26C94212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefreshTests" */;
+			buildPhases = (
+				03E26C79212BEA1B004A708E /* Sources */,
+				03E26C7A212BEA1B004A708E /* Frameworks */,
+				03E26C7B212BEA1B004A708E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E26C7F212BEA1B004A708E /* PBXTargetDependency */,
+			);
+			name = FZRefreshTests;
+			productName = FZRefreshTests;
+			productReference = 03E26C7D212BEA1B004A708E /* FZRefreshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03E26C87212BEA1B004A708E /* FZRefreshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E26C97212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefreshUITests" */;
+			buildPhases = (
+				03E26C84212BEA1B004A708E /* Sources */,
+				03E26C85212BEA1B004A708E /* Frameworks */,
+				03E26C86212BEA1B004A708E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E26C8A212BEA1B004A708E /* PBXTargetDependency */,
+			);
+			name = FZRefreshUITests;
+			productName = FZRefreshUITests;
+			productReference = 03E26C88212BEA1B004A708E /* FZRefreshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		03E26C9E212BEA44004A708E /* FZ-Refresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E26CB6212BEA44004A708E /* Build configuration list for PBXNativeTarget "FZ-Refresh" */;
+			buildPhases = (
+				03E26C9A212BEA44004A708E /* Sources */,
+				03E26C9B212BEA44004A708E /* Frameworks */,
+				03E26C9C212BEA44004A708E /* Headers */,
+				03E26C9D212BEA44004A708E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FZ-Refresh";
+			productName = "FZ-Refresh";
+			productReference = 03E26C9F212BEA44004A708E /* FZ_Refresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		03E26CA6212BEA44004A708E /* FZ-RefreshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E26CBA212BEA44004A708E /* Build configuration list for PBXNativeTarget "FZ-RefreshTests" */;
+			buildPhases = (
+				03E26CA3212BEA44004A708E /* Sources */,
+				03E26CA4212BEA44004A708E /* Frameworks */,
+				03E26CA5212BEA44004A708E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E26CAA212BEA44004A708E /* PBXTargetDependency */,
+				03E26CAC212BEA44004A708E /* PBXTargetDependency */,
+			);
+			name = "FZ-RefreshTests";
+			productName = "FZ-RefreshTests";
+			productReference = 03E26CA7212BEA44004A708E /* FZ-RefreshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E26C5D212BEA1A004A708E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "王欣";
+				TargetAttributes = {
+					03E26C64212BEA1A004A708E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					03E26C7C212BEA1B004A708E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 03E26C64212BEA1A004A708E;
+					};
+					03E26C87212BEA1B004A708E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 03E26C64212BEA1A004A708E;
+					};
+					03E26C9E212BEA44004A708E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					03E26CA6212BEA44004A708E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 03E26C64212BEA1A004A708E;
+					};
+				};
+			};
+			buildConfigurationList = 03E26C60212BEA1A004A708E /* Build configuration list for PBXProject "FZRefresh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03E26C5C212BEA1A004A708E;
+			productRefGroup = 03E26C66212BEA1A004A708E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E26C64212BEA1A004A708E /* FZRefresh */,
+				03E26C7C212BEA1B004A708E /* FZRefreshTests */,
+				03E26C87212BEA1B004A708E /* FZRefreshUITests */,
+				03E26C9E212BEA44004A708E /* FZ-Refresh */,
+				03E26CA6212BEA44004A708E /* FZ-RefreshTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E26C63212BEA1A004A708E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CE3212BEAF1004A708E /* RefreshViewController.xib in Resources */,
+				03E26C75212BEA1B004A708E /* LaunchScreen.storyboard in Resources */,
+				03E26C72212BEA1B004A708E /* Assets.xcassets in Resources */,
+				03E26C70212BEA1A004A708E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C7B212BEA1B004A708E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C86212BEA1B004A708E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C9D212BEA44004A708E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26CA5212BEA44004A708E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E26C61212BEA1A004A708E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CE2212BEAF1004A708E /* RefreshViewController.m in Sources */,
+				03E26C6D212BEA1A004A708E /* ViewController.m in Sources */,
+				03E26C78212BEA1B004A708E /* main.m in Sources */,
+				03E26C6A212BEA1A004A708E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C79212BEA1B004A708E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26C82212BEA1B004A708E /* FZRefreshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C84212BEA1B004A708E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26C8D212BEA1B004A708E /* FZRefreshUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26C9A212BEA44004A708E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CD2212BEA8F004A708E /* UIScrollView+Custom.m in Sources */,
+				03E26CD3212BEA8F004A708E /* AnimationView.m in Sources */,
+				03E26CDD212BEA8F004A708E /* RefreshComponent.m in Sources */,
+				03E26CDE212BEA8F004A708E /* UIScrollView+Refresh.m in Sources */,
+				03E26CD8212BEA8F004A708E /* NormalAniationView.m in Sources */,
+				03E26CDB212BEA8F004A708E /* RefreshFooterView.m in Sources */,
+				03E26CD0212BEA8F004A708E /* BaseAnimationView.m in Sources */,
+				03E26CCE212BEA8F004A708E /* RefreshHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E26CA3212BEA44004A708E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E26CAF212BEA44004A708E /* FZ_RefreshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03E26C7F212BEA1B004A708E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E26C64212BEA1A004A708E /* FZRefresh */;
+			targetProxy = 03E26C7E212BEA1B004A708E /* PBXContainerItemProxy */;
+		};
+		03E26C8A212BEA1B004A708E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E26C64212BEA1A004A708E /* FZRefresh */;
+			targetProxy = 03E26C89212BEA1B004A708E /* PBXContainerItemProxy */;
+		};
+		03E26CAA212BEA44004A708E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E26C9E212BEA44004A708E /* FZ-Refresh */;
+			targetProxy = 03E26CA9212BEA44004A708E /* PBXContainerItemProxy */;
+		};
+		03E26CAC212BEA44004A708E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E26C64212BEA1A004A708E /* FZRefresh */;
+			targetProxy = 03E26CAB212BEA44004A708E /* PBXContainerItemProxy */;
+		};
+		03E26CB3212BEA44004A708E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E26C9E212BEA44004A708E /* FZ-Refresh */;
+			targetProxy = 03E26CB2212BEA44004A708E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03E26C6E212BEA1A004A708E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E26C6F212BEA1A004A708E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03E26C73212BEA1B004A708E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E26C74212BEA1B004A708E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03E26C8F212BEA1B004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03E26C90212BEA1B004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E26C92212BEA1B004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C9R69W445;
+				INFOPLIST_FILE = FZRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FZRefreshIdentifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03E26C93212BEA1B004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C9R69W445;
+				INFOPLIST_FILE = FZRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FZRefreshIdentifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03E26C95212BEA1B004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = FZRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZRefreshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZRefresh.app/FZRefresh";
+			};
+			name = Debug;
+		};
+		03E26C96212BEA1B004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = FZRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZRefreshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZRefresh.app/FZRefresh";
+			};
+			name = Release;
+		};
+		03E26C98212BEA1B004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = FZRefreshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZRefreshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FZRefresh;
+			};
+			name = Debug;
+		};
+		03E26C99212BEA1B004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = FZRefreshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZRefreshUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FZRefresh;
+			};
+			name = Release;
+		};
+		03E26CB7212BEA44004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SP889REF75;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FZ-Refresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-Refresh";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		03E26CB8212BEA44004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SP889REF75;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FZ-Refresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-Refresh";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		03E26CBB212BEA44004A708E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = "FZ-RefreshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-RefreshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZRefresh.app/FZRefresh";
+			};
+			name = Debug;
+		};
+		03E26CBC212BEA44004A708E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP889REF75;
+				INFOPLIST_FILE = "FZ-RefreshTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-RefreshTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZRefresh.app/FZRefresh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E26C60212BEA1A004A708E /* Build configuration list for PBXProject "FZRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26C8F212BEA1B004A708E /* Debug */,
+				03E26C90212BEA1B004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E26C91212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26C92212BEA1B004A708E /* Debug */,
+				03E26C93212BEA1B004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E26C94212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefreshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26C95212BEA1B004A708E /* Debug */,
+				03E26C96212BEA1B004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E26C97212BEA1B004A708E /* Build configuration list for PBXNativeTarget "FZRefreshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26C98212BEA1B004A708E /* Debug */,
+				03E26C99212BEA1B004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E26CB6212BEA44004A708E /* Build configuration list for PBXNativeTarget "FZ-Refresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26CB7212BEA44004A708E /* Debug */,
+				03E26CB8212BEA44004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E26CBA212BEA44004A708E /* Build configuration list for PBXNativeTarget "FZ-RefreshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E26CBB212BEA44004A708E /* Debug */,
+				03E26CBC212BEA44004A708E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E26C5D212BEA1A004A708E /* Project object */;
+}
