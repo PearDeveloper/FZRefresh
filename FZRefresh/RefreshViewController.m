@@ -11,6 +11,7 @@
 #import "UIScrollView+Refresh.h"
 @interface RefreshViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView * tableView;
+@property (nonatomic,strong)UIView * backView;
 @property (nonatomic,assign)NSInteger rowCount;
 @end
 
@@ -42,12 +43,38 @@
             [weakSelf.tableView reloadData];
         });
     } AnimationType:(AnimationTypeCustom)];
-    
     self.tableView.fz_footer = footer;
+//    [self setupBarView];
+    
+}
+//-(void)setupBarView{
+//    NSArray * sub = self.navigationController.navigationBar.subviews;
+//    for (UIView * viw in sub) {
+//        if ([viw isMemberOfClass:NSClassFromString(@"_UINavigationBarLargeTitleView")]) {
+//            [viw addSubview:self.backView];
+//            self.backView.backgroundColor = [UIColor blackColor];
+//            self.backView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//            self.backView.frame = CGRectMake(0, 64, viw.bounds.size.width, viw.bounds.size.height);
+//        }
+//    }
+//}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSArray * sub = self.navigationController.navigationBar.subviews;
+    for (int i = 0; i<sub.count; i++) {
+        UIView * vie = sub[i];
+        UIColor * color = [UIColor colorWithRed:i * 60/255.0 green:i * 60/255.0 blue:i * 60/255.0 alpha:1];
+        vie.backgroundColor = color;
+    }
+
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.rowCount;
+}
+-(UIView *)backView{
+    if (!_backView) {
+        _backView = [[UIView alloc]init];
+    }return _backView;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

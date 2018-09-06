@@ -56,6 +56,7 @@
     }else{
         offsetY   = self.scrollView.contentOffset.y - (self.scrollView.contentSize.height- self.scrollView.bounds.size.height);
     }
+    offsetY -= self.scrollView.re_insetB;
     CGFloat offset    = MAX(0, offsetY);    
     self.progress     = MIN(1, offset/viewHeight);
     if (offset <= 0) {
