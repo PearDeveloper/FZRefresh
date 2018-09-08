@@ -49,7 +49,7 @@
 }
 //开始动画
 -(void)startAnimation{
-    self.tipLab.text = @"加载中...";
+    self.tipLab.text = @"正在加载";
     [self makeRefreshPath];
     [self addAnimation];
 }

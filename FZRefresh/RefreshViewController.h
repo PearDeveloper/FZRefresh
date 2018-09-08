@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RefreshComponent.h"
+#import "UIScrollView+Custom.h"
+#import "UIScrollView+Refresh.h"
 @interface RefreshViewController : UIViewController
-
+@property (nonatomic,assign)AnimationType animationType;
 @end

@@ -7,8 +7,7 @@
 //
 
 #import "RefreshViewController.h"
-#import "RefreshHeaderView.h"
-#import "UIScrollView+Refresh.h"
+
 @interface RefreshViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView * tableView;
 @property (nonatomic,assign)NSInteger rowCount;
@@ -31,7 +30,7 @@
             [weakSelf.tableView reloadData];
             [weakSelf.tableView.fz_footer ResetNoMoreData];
         });
-    } AnimationType:(AnimationTypeIndicatorView)];
+    } AnimationType:(self.animationType)];
     
     
     self.tableView.fz_header = header;
@@ -44,7 +43,7 @@
             [weakSelf.tableView.fz_footer endRefreshingWithNoMoreData];
             [weakSelf.tableView reloadData];
         });
-    } AnimationType:(AnimationTypeCustom)];
+    } AnimationType:(self.animationType)];
     self.tableView.fz_footer = footer;
     
     

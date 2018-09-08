@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,29 +22,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCH-wx-frl">
-                                <rect key="frame" x="147.5" y="281.5" width="80" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="EQZ-Iu-WlF"/>
-                                    <constraint firstAttribute="width" constant="80" id="wus-q4-m6i"/>
-                                </constraints>
-                                <state key="normal" title="下拉刷新">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WK-85-utm">
+                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
                                 <connections>
-                                    <action selector="tapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zt-8G-3oU"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lnt-fk-tQi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tiR-J3-3RR"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NCH-wx-frl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jD1-SY-Awy"/>
-                            <constraint firstItem="NCH-wx-frl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rbX-aU-7yz"/>
+                            <constraint firstItem="8WK-85-utm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dAu-78-4Ds"/>
+                            <constraint firstItem="kUa-qJ-CON" firstAttribute="top" secondItem="8WK-85-utm" secondAttribute="bottom" id="lt6-Li-pOI"/>
+                            <constraint firstItem="8WK-85-utm" firstAttribute="top" secondItem="X4g-gv-OVs" secondAttribute="bottom" id="oP9-vA-8G9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8WK-85-utm" secondAttribute="trailing" id="toN-PH-Y9q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Demo" largeTitleDisplayMode="never" id="iwr-5I-hhR"/>
+                    <connections>
+                        <outlet property="tableView" destination="8WK-85-utm" id="tgv-M5-9ET"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

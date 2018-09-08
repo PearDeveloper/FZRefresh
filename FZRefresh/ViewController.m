@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "RefreshViewController.h"
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,14 +17,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
 
 }
-- (IBAction)tapAction:(UIButton *)sender {
-    RefreshViewController * control = [[RefreshViewController alloc]initWithNibName:@"RefreshViewController" bundle:nil];
-    [self.navigationController pushViewController:control animated:YES];
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return  3;
 }
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"样式%ld",indexPath.row];
+    return  cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    RefreshViewController * control = [[RefreshViewController alloc]initWithNibName:@"RefreshViewController" bundle:nil];
+    control.animationType = indexPath.row;
+    [self.navigationController pushViewController:control animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:true];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
