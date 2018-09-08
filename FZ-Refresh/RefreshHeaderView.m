@@ -8,7 +8,7 @@
 
 #import "RefreshHeaderView.h"
 #import  <Foundation/Foundation.h>
-#import "AnimationView.h"
+#import "FZAnimationView.h"
 #import "UIScrollView+Custom.h"
 
 @interface RefreshHeaderView()<UIScrollViewDelegate>
