@@ -20,6 +20,7 @@
     [super viewDidLoad];
     
     self.rowCount = 4;
+    
     __weak typeof(self) weakSelf = self;
     self.navigationItem.title = @"刷新";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];

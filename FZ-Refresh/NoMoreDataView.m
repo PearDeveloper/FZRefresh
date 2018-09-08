@@ -27,7 +27,7 @@
     if (!_tipLab) {
         _tipLab = [[UILabel alloc]init];
         _tipLab.textColor = [UIColor darkGrayColor];
-        _tipLab.text = @"无更多数据.";
+        _tipLab.text = @"无更多数据";
         _tipLab.numberOfLines = 0;
         _tipLab.font = [UIFont systemFontOfSize:16];
         _tipLab.textAlignment = NSTextAlignmentCenter;
