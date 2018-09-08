@@ -34,5 +34,8 @@
 -(void)stopAnimaiton{
     
 }
+-(void)noMoreData:(BOOL)noMoreData{
+    
+}
 
 @end

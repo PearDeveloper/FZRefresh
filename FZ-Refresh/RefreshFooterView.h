@@ -11,5 +11,7 @@
 @interface RefreshFooterView : RefreshComponent
 
 +(RefreshFooterView*)FooterWithRefreshingBlock:(RefreshBlock)refreshingBlock AnimationType:(AnimationType)type;
-
+/** 提示没有更多的数据 */
+- (void)endRefreshingWithNoMoreData;
+- (void)ResetNoMoreData;
 @end

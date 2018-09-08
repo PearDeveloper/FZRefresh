@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033AD2BD21436733003E3BFC /* PullDownAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033AD2BB21436733003E3BFC /* PullDownAnimationView.h */; };
+		033AD2BE21436733003E3BFC /* PullDownAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033AD2BC21436733003E3BFC /* PullDownAnimationView.m */; };
+		033AD2C121437679003E3BFC /* NoMoreDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = 033AD2BF21437679003E3BFC /* NoMoreDataView.h */; };
+		033AD2C221437679003E3BFC /* NoMoreDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033AD2C021437679003E3BFC /* NoMoreDataView.m */; };
 		03E26C6A212BEA1A004A708E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C69212BEA1A004A708E /* AppDelegate.m */; };
 		03E26C6D212BEA1A004A708E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26C6C212BEA1A004A708E /* ViewController.m */; };
 		03E26C70212BEA1A004A708E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E26C6E212BEA1A004A708E /* Main.storyboard */; };
@@ -93,6 +97,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		033AD2BB21436733003E3BFC /* PullDownAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullDownAnimationView.h; sourceTree = "<group>"; };
+		033AD2BC21436733003E3BFC /* PullDownAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullDownAnimationView.m; sourceTree = "<group>"; };
+		033AD2BF21437679003E3BFC /* NoMoreDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoMoreDataView.h; sourceTree = "<group>"; };
+		033AD2C021437679003E3BFC /* NoMoreDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoMoreDataView.m; sourceTree = "<group>"; };
 		03E26C65212BEA1A004A708E /* FZRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E26C68212BEA1A004A708E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03E26C69212BEA1A004A708E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,6 +185,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033AD2BA214366DC003E3BFC /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				03E26CC8212BEA8F004A708E /* AnimationView.h */,
+				03E26CC2212BEA8E004A708E /* AnimationView.m */,
+				03E26CC5212BEA8E004A708E /* NormalAniationView.h */,
+				03E26CC7212BEA8F004A708E /* NormalAniationView.m */,
+				03E26CC4212BEA8E004A708E /* BaseAnimationView.h */,
+				03E26CBF212BEA8E004A708E /* BaseAnimationView.m */,
+				033AD2BB21436733003E3BFC /* PullDownAnimationView.h */,
+				033AD2BC21436733003E3BFC /* PullDownAnimationView.m */,
+				033AD2BF21437679003E3BFC /* NoMoreDataView.h */,
+				033AD2C021437679003E3BFC /* NoMoreDataView.m */,
+			);
+			name = AnimationView;
+			sourceTree = "<group>";
+		};
 		03E26C5C212BEA1A004A708E = {
 			isa = PBXGroup;
 			children = (
@@ -241,12 +266,7 @@
 		03E26CA0212BEA44004A708E /* FZ-Refresh */ = {
 			isa = PBXGroup;
 			children = (
-				03E26CC8212BEA8F004A708E /* AnimationView.h */,
-				03E26CC2212BEA8E004A708E /* AnimationView.m */,
-				03E26CC4212BEA8E004A708E /* BaseAnimationView.h */,
-				03E26CBF212BEA8E004A708E /* BaseAnimationView.m */,
-				03E26CC5212BEA8E004A708E /* NormalAniationView.h */,
-				03E26CC7212BEA8F004A708E /* NormalAniationView.m */,
+				033AD2BA214366DC003E3BFC /* AnimationView */,
 				03E26CCB212BEA8F004A708E /* RefreshComponent.h */,
 				03E26CCC212BEA8F004A708E /* RefreshComponent.m */,
 				03E26CC6212BEA8E004A708E /* RefreshFooterView.h */,
@@ -280,12 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E26CDC212BEA8F004A708E /* RefreshComponent.h in Headers */,
+				033AD2C121437679003E3BFC /* NoMoreDataView.h in Headers */,
 				03E26CD9212BEA8F004A708E /* AnimationView.h in Headers */,
 				03E26CD1212BEA8F004A708E /* UIScrollView+Refresh.h in Headers */,
 				03E26CD7212BEA8F004A708E /* RefreshFooterView.h in Headers */,
 				03E26CD6212BEA8F004A708E /* NormalAniationView.h in Headers */,
 				03E26CCF212BEA8F004A708E /* RefreshHeaderView.h in Headers */,
 				03E26CB1212BEA44004A708E /* FZ_Refresh.h in Headers */,
+				033AD2BD21436733003E3BFC /* PullDownAnimationView.h in Headers */,
 				03E26CDA212BEA8F004A708E /* UIScrollView+Custom.h in Headers */,
 				03E26CD5212BEA8F004A708E /* BaseAnimationView.h in Headers */,
 			);
@@ -511,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033AD2BE21436733003E3BFC /* PullDownAnimationView.m in Sources */,
 				03E26CD2212BEA8F004A708E /* UIScrollView+Custom.m in Sources */,
 				03E26CD3212BEA8F004A708E /* AnimationView.m in Sources */,
 				03E26CDD212BEA8F004A708E /* RefreshComponent.m in Sources */,
@@ -518,6 +541,7 @@
 				03E26CD8212BEA8F004A708E /* NormalAniationView.m in Sources */,
 				03E26CDB212BEA8F004A708E /* RefreshFooterView.m in Sources */,
 				03E26CD0212BEA8F004A708E /* BaseAnimationView.m in Sources */,
+				033AD2C221437679003E3BFC /* NoMoreDataView.m in Sources */,
 				03E26CCE212BEA8F004A708E /* RefreshHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

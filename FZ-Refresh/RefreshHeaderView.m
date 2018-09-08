@@ -36,9 +36,7 @@
 
 //添加
 -(void)setupItems{
-    if (self.animationView) {
-        [self.animationView removeFromSuperview];
-    }
+
     [self addSubview:self.animationView];
     self.animationView.translatesAutoresizingMaskIntoConstraints = NO;
     NSLayoutConstraint * CenterX = [NSLayoutConstraint constraintWithItem:self.animationView attribute:(NSLayoutAttributeCenterX) relatedBy:(NSLayoutRelationEqual) toItem:self attribute:(NSLayoutAttributeCenterX) multiplier:1 constant:0];
@@ -61,6 +59,9 @@
         return;
     }
     self.hidden = NO;
+    if (self.state == RefreshStateNoMoreData) {
+        return;
+    }
     if (self.progress >= CriticalProgress) {
         self.state = RefreshStateWillRefresh;
     }else if(self.progress <= 0){
@@ -100,7 +101,9 @@
     UIGestureRecognizerState  state = [[change valueForKey:@"new"] integerValue];
     if (state == UIGestureRecognizerStateEnded) {
         if(self.progress >= CriticalProgress){
-            self.state = RefreshStateRefreshing;
+            if (self.state == RefreshStateWillRefresh) {
+                self.state = RefreshStateRefreshing;
+            }
         }
     }
 }

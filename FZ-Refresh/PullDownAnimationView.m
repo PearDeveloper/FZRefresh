@@ -1,34 +1,27 @@
 //
-//  NormalAniationView.m
-//  PullToRefresh
+//  PullDownAnimationView.m
+//  FZ-Refresh
 //
-//  Created by 王欣 on 2018/8/20.
+//  Created by 王欣 on 2018/9/8.
 //  Copyright © 2018年 王欣. All rights reserved.
 //
 
-#import "NormalAniationView.h"
-@interface NormalAniationView()
-@property (nonatomic,strong)UILabel *  tipLab;
+#import "PullDownAnimationView.h"
+@interface PullDownAnimationView()
 @property (nonatomic,strong)CAShapeLayer * oneLayer;
 @property (nonatomic,strong)CAShapeLayer * twoLayer;
-@property (nonatomic,strong)UIBezierPath * startPath;
+@property (nonatomic,strong)UILabel *  tipLab;
 @property (nonatomic,assign)CGFloat progress;
+@property (nonatomic,strong)UIActivityIndicatorView * indicatorView;
+
 @end
-
-@implementation NormalAniationView
-
--(instancetype)initWithFrame:(CGRect)frame{
-    if (self =[super initWithFrame:frame]) {
-        
-    }return self;
-}
--(void)prepare{
-    self.backgroundColor = [UIColor clearColor];
-}
+@implementation PullDownAnimationView
 
 //布局子视图
 -(void)setupSublayers{
+    
     [self addSubview:self.tipLab];
+    [self addSubview:self.indicatorView];
     [self.layer addSublayer:self.oneLayer];
     [self.layer addSublayer:self.twoLayer];
     self.tipLab.translatesAutoresizingMaskIntoConstraints = false;
@@ -56,32 +49,26 @@
 }
 //开始动画
 -(void)startAnimation{
-    self.tipLab.text = @"正在加载";
+    self.tipLab.text = @"加载中...";
     [self makeRefreshPath];
     [self addAnimation];
 }
 
 -(void)addAnimation{
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    //默认是顺时针效果，若将fromValue和toValue的值互换，则为逆时针效果
-    animation.fromValue = [NSNumber numberWithFloat:0.f];
-    animation.toValue   = [NSNumber numberWithFloat: M_PI *2];
-    animation.duration  = animationTime * 0.8;
-    animation.autoreverses = NO;
-    animation.fillMode = kCAFillModeForwards;
-    animation.repeatCount = MAXFLOAT;
-    animation.removedOnCompletion = NO;
-    //如果这里想设置成一直自旋转，可以设置为MAXFLOAT，否则设置具体的数值则代表执行多少次
-    [self.oneLayer addAnimation:animation forKey:nil];
-    [self.twoLayer addAnimation:animation forKey:nil];
+    self.oneLayer.hidden = true;
+    self.twoLayer.hidden = true;
+    self.indicatorView.hidden = false;
+    [self.indicatorView startAnimating];
 }
 
 
 //结束动画
 -(void)stopAnimaiton{
-   self.tipLab.text = @"结束加载";
-    [self.oneLayer removeAllAnimations];
-    [self.twoLayer removeAllAnimations];
+    
+    self.oneLayer.hidden = false;
+    self.twoLayer.hidden = false;
+    self.indicatorView.hidden = true;
+    [self.indicatorView stopAnimating];
     
 }
 -(void)layOutLayer{
@@ -91,6 +78,7 @@
     CGRect rect =  CGRectMake(width * 0.5 - height, 0, height, height);
     self.oneLayer.frame = rect;
     self.twoLayer.frame = rect;
+    self.indicatorView.frame = rect;
 }
 
 -(void)makeNonarmalPathisHeader:(BOOL)header{
@@ -104,7 +92,7 @@
     [onePath addLineToPoint:point1];
     self.oneLayer.path = onePath.CGPath;
     UIBezierPath * twoPath = [UIBezierPath bezierPath];
-
+    
     CGPoint twoPoint = header?CGPointMake(center - 6, center + oneLayerHeigh/2 - 8):CGPointMake(center - 6, center - oneLayerHeigh/2 + 8);
     CGPoint twoPoint1 =header? CGPointMake(center, center + oneLayerHeigh/2): CGPointMake(center, center - oneLayerHeigh/2);
     CGPoint twoPoint2 =header? CGPointMake(center + 6, center + oneLayerHeigh/2 -8):CGPointMake(center + 6, center - oneLayerHeigh/2 +8);
@@ -153,16 +141,16 @@
 -(CAShapeLayer *)oneLayer{
     if (!_oneLayer) {
         _oneLayer = [CAShapeLayer layer];
-        _oneLayer.lineWidth = 2;
-        _oneLayer.strokeColor = [UIColor redColor].CGColor;
+        _oneLayer.lineWidth = 1.2;
+        _oneLayer.strokeColor = [UIColor darkGrayColor].CGColor;
         _oneLayer.fillColor = UIColor.clearColor.CGColor;
     }return _oneLayer;
 }
 -(CAShapeLayer *)twoLayer{
     if (!_twoLayer) {
         _twoLayer = [CAShapeLayer layer];
-        _twoLayer.lineWidth = 2;
-        _twoLayer.strokeColor = [UIColor redColor].CGColor;
+        _twoLayer.lineWidth = 1.2;
+        _twoLayer.strokeColor = [UIColor darkGrayColor].CGColor;
         _twoLayer.fillColor = UIColor.clearColor.CGColor;
         _twoLayer.backgroundColor = [UIColor clearColor].CGColor;
         
@@ -176,6 +164,12 @@
         _tipLab.numberOfLines = 0;
         _tipLab.font = [UIFont systemFontOfSize:14];
     }return _tipLab;
+}
+-(UIActivityIndicatorView *)indicatorView{
+    if (!_indicatorView) {
+        _indicatorView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyleGray)];
+        _indicatorView.hidden = true;
+    }return _indicatorView;
 }
 
 @end

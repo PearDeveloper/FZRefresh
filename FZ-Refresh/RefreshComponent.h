@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AnimationView.h"
 #import "NormalAniationView.h"
+#import "PullDownAnimationView.h"
+#import "NoMoreDataView.h"
 #define viewHeight  60
 #define RefreshAnimationTime 0.25
 #define CriticalProgress 1.0  //可以开始刷新的临界区域
@@ -32,6 +34,7 @@ typedef NS_ENUM(NSUInteger, AnimationType) {
     /** 动画的类型 */
     AnimationTypeNormal,
     AnimationTypeCustom,
+    AnimationTypeIndicatorView,
     
 };
 
@@ -58,6 +61,7 @@ typedef NS_ENUM(NSUInteger, AnimationType) {
 - (void)scrollViewPanStateDidChange:(NSDictionary *)change;
 - (void)executeRefreshingCallback;
 - (void)beginRefresh;
+-(void)setNoMoreDataView;
 //结束刷新
 - (void)endRefresh;
 @end

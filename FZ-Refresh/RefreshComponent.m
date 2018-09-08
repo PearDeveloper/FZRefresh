@@ -31,14 +31,29 @@
 
 -(void)setAnimationType:(AnimationType)animationType{
     _animationType = animationType;
-    if (_animationType == AnimationTypeNormal) {
-        self.animationView = [[NormalAniationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
-    }else if (_animationType == AnimationTypeCustom){
-        self.animationView = [[AnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
-    }
+    [self.animationView removeFromSuperview];
+    [self resetAnimationViewWithType:animationType];
     [self setupItems];
 }
--(void)setupItems{}
+-(void)resetAnimationViewWithType:(AnimationType)animationType{
+    if (animationType == AnimationTypeNormal) {
+        self.animationView = [[NormalAniationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
+    }else if (animationType == AnimationTypeCustom){
+        self.animationView = [[AnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
+    }else if (animationType == AnimationTypeIndicatorView){
+        self.animationView = [[PullDownAnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
+    }
+}
+-(void)setNoMoreDataView{
+    [self.animationView removeFromSuperview];
+    self.animationView = [[NoMoreDataView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
+    [self setupItems];
+    
+}
+
+-(void)setupItems{
+    
+}
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];

@@ -64,6 +64,9 @@
         return;
     }
     self.hidden = false;
+    if (self.state == RefreshStateNoMoreData) {
+        return;
+    }
     if (self.progress >= CriticalProgress) {
         self.state = RefreshStateWillRefresh;
     }else if(self.progress <= 0){
@@ -92,6 +95,7 @@
         self.hidden = NO;
         [self Refresh];
     }else if (self.state == RefreshStateNoMoreData){
+        [super setNoMoreDataView];
         NSLog(@"没有更多数据");
     }
 }
@@ -105,7 +109,9 @@
     UIGestureRecognizerState  state = [[change valueForKey:@"new"] integerValue];
     if (state == UIGestureRecognizerStateEnded) {
         if(self.progress >= CriticalProgress){
-            self.state = RefreshStateRefreshing;
+            if (self.state == RefreshStateWillRefresh) {
+                self.state = RefreshStateRefreshing;
+            }
         }
     }
 }
@@ -120,7 +126,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [super beginRefresh];
         self.progress = 1.0;
-        
         [self.animationView startAnimation];
         [UIView animateWithDuration:RefreshAnimationTime animations:^{
             CGFloat bottom = self.scrollViewOriginalInset.bottom + viewHeight;
@@ -152,5 +157,22 @@
     });
 }
 
-
+//结束刷新无更多数据
+- (void)endRefreshingWithNoMoreData{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(self.state != RefreshStateRefreshing)return;
+        
+        [UIView animateWithDuration:RefreshAnimationTime animations:^{
+            self.scrollView.re_insetB = self.scrollViewOriginalInset.bottom;
+        } completion:^(BOOL finished) {
+            self.state = RefreshStateIdle;
+            [self.animationView stopAnimaiton];
+            self.state = RefreshStateNoMoreData;
+        }];
+    });
+}
+- (void)ResetNoMoreData{
+    [super setAnimationType:self.animationType];
+    self.state = RefreshStateIdle;
+}
 @end
