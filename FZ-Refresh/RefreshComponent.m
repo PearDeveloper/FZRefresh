@@ -39,7 +39,7 @@
     if (animationType == AnimationTypeNormal) {
         self.animationView = [[NormalAniationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
     }else if (animationType == AnimationTypeCustom){
-        self.animationView = [[AnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
+        self.animationView = [[FZAnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
     }else if (animationType == AnimationTypeIndicatorView){
         self.animationView = [[PullDownAnimationView alloc]initWithFrame:CGRectMake(0, 0, 120, 50)];
     }

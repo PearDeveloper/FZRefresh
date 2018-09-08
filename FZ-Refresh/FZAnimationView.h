@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseAnimationView.h"
-@interface AnimationView : BaseAnimationView
+@interface FZAnimationView : BaseAnimationView
 
 -(void)addAnimaiton;
 -(void)removeAnimation;

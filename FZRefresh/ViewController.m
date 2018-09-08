@@ -26,9 +26,6 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        
-    }
     cell.textLabel.text = [NSString stringWithFormat:@"样式%ld",indexPath.row];
     return  cell;
 }

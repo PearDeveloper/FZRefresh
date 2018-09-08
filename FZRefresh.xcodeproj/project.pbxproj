@@ -29,12 +29,12 @@
 		03E26CD0212BEA8F004A708E /* BaseAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CBF212BEA8E004A708E /* BaseAnimationView.m */; };
 		03E26CD1212BEA8F004A708E /* UIScrollView+Refresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC0212BEA8E004A708E /* UIScrollView+Refresh.h */; };
 		03E26CD2212BEA8F004A708E /* UIScrollView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC1212BEA8E004A708E /* UIScrollView+Custom.m */; };
-		03E26CD3212BEA8F004A708E /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC2212BEA8E004A708E /* AnimationView.m */; };
+		03E26CD3212BEA8F004A708E /* FZAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC2212BEA8E004A708E /* FZAnimationView.m */; };
 		03E26CD5212BEA8F004A708E /* BaseAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC4212BEA8E004A708E /* BaseAnimationView.h */; };
 		03E26CD6212BEA8F004A708E /* NormalAniationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC5212BEA8E004A708E /* NormalAniationView.h */; };
 		03E26CD7212BEA8F004A708E /* RefreshFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC6212BEA8E004A708E /* RefreshFooterView.h */; };
 		03E26CD8212BEA8F004A708E /* NormalAniationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CC7212BEA8F004A708E /* NormalAniationView.m */; };
-		03E26CD9212BEA8F004A708E /* AnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC8212BEA8F004A708E /* AnimationView.h */; };
+		03E26CD9212BEA8F004A708E /* FZAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC8212BEA8F004A708E /* FZAnimationView.h */; };
 		03E26CDA212BEA8F004A708E /* UIScrollView+Custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CC9212BEA8F004A708E /* UIScrollView+Custom.h */; };
 		03E26CDB212BEA8F004A708E /* RefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E26CCA212BEA8F004A708E /* RefreshFooterView.m */; };
 		03E26CDC212BEA8F004A708E /* RefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E26CCB212BEA8F004A708E /* RefreshComponent.h */; };
@@ -128,12 +128,12 @@
 		03E26CBF212BEA8E004A708E /* BaseAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationView.m; sourceTree = "<group>"; };
 		03E26CC0212BEA8E004A708E /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		03E26CC1212BEA8E004A708E /* UIScrollView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Custom.m"; sourceTree = "<group>"; };
-		03E26CC2212BEA8E004A708E /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		03E26CC2212BEA8E004A708E /* FZAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZAnimationView.m; sourceTree = "<group>"; };
 		03E26CC4212BEA8E004A708E /* BaseAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimationView.h; sourceTree = "<group>"; };
 		03E26CC5212BEA8E004A708E /* NormalAniationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalAniationView.h; sourceTree = "<group>"; };
 		03E26CC6212BEA8E004A708E /* RefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshFooterView.h; sourceTree = "<group>"; };
 		03E26CC7212BEA8F004A708E /* NormalAniationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalAniationView.m; sourceTree = "<group>"; };
-		03E26CC8212BEA8F004A708E /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		03E26CC8212BEA8F004A708E /* FZAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZAnimationView.h; sourceTree = "<group>"; };
 		03E26CC9212BEA8F004A708E /* UIScrollView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Custom.h"; sourceTree = "<group>"; };
 		03E26CCA212BEA8F004A708E /* RefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshFooterView.m; sourceTree = "<group>"; };
 		03E26CCB212BEA8F004A708E /* RefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshComponent.h; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 		033AD2BA214366DC003E3BFC /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
-				03E26CC8212BEA8F004A708E /* AnimationView.h */,
-				03E26CC2212BEA8E004A708E /* AnimationView.m */,
+				03E26CC8212BEA8F004A708E /* FZAnimationView.h */,
+				03E26CC2212BEA8E004A708E /* FZAnimationView.m */,
 				03E26CC5212BEA8E004A708E /* NormalAniationView.h */,
 				03E26CC7212BEA8F004A708E /* NormalAniationView.m */,
 				03E26CC4212BEA8E004A708E /* BaseAnimationView.h */,
@@ -301,7 +301,7 @@
 			files = (
 				03E26CDC212BEA8F004A708E /* RefreshComponent.h in Headers */,
 				033AD2C121437679003E3BFC /* NoMoreDataView.h in Headers */,
-				03E26CD9212BEA8F004A708E /* AnimationView.h in Headers */,
+				03E26CD9212BEA8F004A708E /* FZAnimationView.h in Headers */,
 				03E26CD1212BEA8F004A708E /* UIScrollView+Refresh.h in Headers */,
 				03E26CD7212BEA8F004A708E /* RefreshFooterView.h in Headers */,
 				03E26CD6212BEA8F004A708E /* NormalAniationView.h in Headers */,
@@ -535,7 +535,7 @@
 			files = (
 				033AD2BE21436733003E3BFC /* PullDownAnimationView.m in Sources */,
 				03E26CD2212BEA8F004A708E /* UIScrollView+Custom.m in Sources */,
-				03E26CD3212BEA8F004A708E /* AnimationView.m in Sources */,
+				03E26CD3212BEA8F004A708E /* FZAnimationView.m in Sources */,
 				03E26CDD212BEA8F004A708E /* RefreshComponent.m in Sources */,
 				03E26CDE212BEA8F004A708E /* UIScrollView+Refresh.m in Sources */,
 				03E26CD8212BEA8F004A708E /* NormalAniationView.m in Sources */,
@@ -830,18 +830,20 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = SP889REF75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "FZ-Refresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-Refresh";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -857,18 +859,20 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = SP889REF75;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "FZ-Refresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "--.FZ-Refresh";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

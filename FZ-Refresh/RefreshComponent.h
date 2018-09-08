@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AnimationView.h"
+#import "FZAnimationView.h"
 #import "NormalAniationView.h"
 #import "PullDownAnimationView.h"
 #import "NoMoreDataView.h"

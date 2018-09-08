@@ -6,8 +6,8 @@
 //  Copyright © 2018年 王欣. All rights reserved.
 //
 
-#import "AnimationView.h"
-@interface AnimationView()
+#import "FZAnimationView.h"
+@interface FZAnimationView()
 @property (nonatomic,strong)CAShapeLayer * oneLayer;
 @property (nonatomic,strong)CAShapeLayer * twoLayer;
 @property (nonatomic,strong)UIBezierPath * startPath;
@@ -16,7 +16,7 @@
 @property (nonatomic,assign)CGFloat layerWidth;
 @end
 
-@implementation AnimationView
+@implementation FZAnimationView
 
 
 -(void)setupSublayers{
