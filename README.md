@@ -14,4 +14,5 @@ AnimationType传入不同的动画类型
 
 ![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片.gif)
 ![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片1.gif)
+![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片2.gif)
 
