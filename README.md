@@ -12,7 +12,7 @@ AnimationType传入不同的动画类型
 
 ## 示例图片
 
-![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片.gif)
-![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片1.gif)
-![Screenshot](https://github.com/wangxin1991/PullToRefreshView/blob/master/示例图片2.gif)
+![Screenshot](https://github.com/PearDeveloper/FZRefresh/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87.gif)
+![Screenshot](https://github.com/PearDeveloper/FZRefresh/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%871.gif)
+![Screenshot](https://github.com/PearDeveloper/FZRefresh/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%872.gif)
 
